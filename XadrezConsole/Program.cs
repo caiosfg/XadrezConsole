@@ -7,11 +7,7 @@ namespace XadrezConsole
     {
         static void Main(string[] args)
         {
-            Posicao P;
-            P = new Posicao(3, 4);
-
-            Console.WriteLine("Posicao :" + P);
-
+            Campo campo = new Campo(8, 8);
             Console.ReadLine();
         }
     }
