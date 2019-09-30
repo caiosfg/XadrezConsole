@@ -8,6 +8,8 @@ namespace XadrezConsole
         static void Main(string[] args)
         {
             Campo campo = new Campo(8, 8);
+            Tela.imprimirTabuleiro(campo);
+
             Console.ReadLine();
         }
     }
