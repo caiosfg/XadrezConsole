@@ -8,8 +8,12 @@ namespace Tabuleiro
 
         public static void imprimirTabuleiro(Campo camp)
         {
+            
             for (int i = 0; i < camp.linhas; i++)
             {
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.Write(8 -i + " ");
+                
                 for (int j = 0; j < camp.colunas; j++)
                 {
                     if (camp.peca(i, j) == null)
@@ -19,11 +23,30 @@ namespace Tabuleiro
                     }
                     else
                     {
-                        Console.Write(camp.peca(i, j) + " ");
+                        ImprimirPeca(camp.peca(i, j));
+                        Console.Write(" ");
                     }
                 }
                 Console.WriteLine();
             }
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine(" A B C D E F G H");
+        }
+
+        public static void ImprimirPeca(Peca peca)
+        {
+            if(peca.cor == Cor.Branca)
+            {
+                Console.Write(peca);
+            }
+            else
+            {
+                ConsoleColor aux = Console.ForegroundColor;
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.Write(peca);
+                Console.ForegroundColor = aux;
+            }
+
         }
     }
 }
