@@ -11,15 +11,8 @@ namespace XadrezConsole
             try
             {
 
-                Campo campo = new Campo(8, 8);
-
-                campo.colocarPeca(new Torre(campo, Cor.Preta), new Posicao(0, 0));
-                campo.colocarPeca(new Torre(campo, Cor.Preta), new Posicao(1, 3));
-                campo.colocarPeca(new Rei(campo, Cor.Preta), new Posicao(0, 2));
-
-                campo.colocarPeca(new Torre(campo, Cor.Branca), new Posicao(3, 5));
-
-                Tela.imprimirTabuleiro(campo);
+                PartidaDeXadrez partida = new PartidaDeXadrez();
+                Tela.imprimirTabuleiro(partida.camp) ;
             }
             catch (TabuleiroExceptions e)
             {
