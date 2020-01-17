@@ -15,12 +15,20 @@ namespace Tabuleiro
             Console.WriteLine();
             Console.WriteLine();
             Console.WriteLine("Turno : "+partida.turno);
+<<<<<<< HEAD
             Console.WriteLine("Aguardando jogada : "+ partida.jogadorAtual);
             if (partida.xeque)
             {
                 Console.WriteLine("XEQUE !");
             }
         
+=======
+            Console.WriteLine("Aguardando jogada : "+ partida.jogadorAtual);   
+            if (partida.xeque)
+            {
+                Console.Write("XEQUE !");
+            }
+>>>>>>> ddb8078c3647efc7058fee52121f8e8f819b2662
         }
 
         public static void imprimirPecasCapturadas(PartidaDeXadrez partida)

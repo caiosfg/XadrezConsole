@@ -19,10 +19,18 @@
         {
             qteMovimentos++;
         }
+<<<<<<< HEAD
+=======
+
+>>>>>>> ddb8078c3647efc7058fee52121f8e8f819b2662
         public void decrementarQteMovimentos()
         {
             qteMovimentos--;
         }
+<<<<<<< HEAD
+=======
+
+>>>>>>> ddb8078c3647efc7058fee52121f8e8f819b2662
         public bool existeMovimentosPossiveis ()
     	{
             bool[,] mat = movimentosPossiveis();
